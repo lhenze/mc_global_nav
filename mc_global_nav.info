@@ -23,4 +23,4 @@ features[menu_links][] = menu-mcglobalnav_mediacommons-press:<front>
 features[menu_links][] = menu-mcglobalnav_my-account:user
 features[menu_links][] = menu-mcglobalnav_the-new-everyday:http://localhost/tne/
 features[menu_links][] = menu-mcglobalnav_view-my-contributions:user
-project path = /Users/lhenze/Development/drupal/sites/all/modules/custom
+project path = /Users/lhenze/Development/drupal/sites/all/modules
