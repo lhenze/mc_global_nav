@@ -1,5 +1,5 @@
-name = MediaCommons Global Navigation 2
-description = 2 Horizontal bar; for moving among installations
+name = MediaCommons Global Navigation
+description = Horizontal bar; for moving among projects
 core = 7.x
 package = Features
 version = 7.x-1.0
@@ -23,4 +23,3 @@ features[menu_links][] = menu-mcglobalnav_mediacommons-press:<front>
 features[menu_links][] = menu-mcglobalnav_my-account:user
 features[menu_links][] = menu-mcglobalnav_the-new-everyday:http://localhost/tne/
 features[menu_links][] = menu-mcglobalnav_view-my-contributions:user
-project path = /Users/lhenze/Development/drupal/sites/all/modules

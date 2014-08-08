@@ -21,10 +21,10 @@ function mc_global_nav_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'babyzen' => array(
+      'mediacommons' => array(
         'region' => 'globalnav',
         'status' => 1,
-        'theme' => 'babyzen',
+        'theme' => 'mediacommons',
         'weight' => 0,
       ),
     ),
