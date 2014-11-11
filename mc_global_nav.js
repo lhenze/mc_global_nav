@@ -93,11 +93,13 @@
       }
     });
     // Main project nav
-    $("header[role=banner] button").unbind('click').click(function () {
+    if ($(".nav.main>ul").length) {
+      console.log("**   has a list");
+      $("header[role=banner] button").unbind('click').click(function () {
 
       var$theMenuButton = this;
       if ($("nav.main ul").is(":visible")) {
-        console.log("case now 1, visi");
+        console.log("case now 1, visible");
         $('nav.main ul').slideUp(300, 'easeInQuad', function () {
           $("header[role=banner] button").removeClass("open");
         });
@@ -113,16 +115,22 @@
             });
           });
         } else {
-          console.log("cae now");
+          console.log("case now slide down");
           // 
-          $('nav.main ul').slideDown(300, 'easeInQuad', function() {
-            $('nav.main ul').attr('aria-hidden', 'false');
-          });
-
+       //   $('nav.main ul').slideDown(300, 'easeInQuad', function() {
+         //   $('nav.main ul').attr('aria-hidden', 'false');
+         // });
+          $('nav.main ul').slideDown(300, 'easeInQuad');
         }
 
       }
     });
+
+    } else {
+       console.log("**   has no list");
+       $("header[role=banner] button").remove();
+    }
+    
   }
 
   function setUpGlobalNavTabletDesk() {
